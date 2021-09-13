@@ -4,7 +4,7 @@ This repository hosts my Azure Virtual Desktop scripts
 
 
 
-# ARM Template to Add sessionhosts to an existing Windows Virtual Desktop hostpool
+# 1. ARM Template to Add sessionhosts to an existing Windows Virtual Desktop hostpool
 
 Click the button below to update my WVD hostpool:
 
