@@ -293,18 +293,6 @@
                 "description": "IMPORTANT: Please don't use this parameter as intune enrollment is not supported yet. True if intune enrollment is selected.  False otherwise"
             },
             "defaultValue": false
-        },
-        "workspaceId": {
-            "type": "string",
-            "metadata": {
-                "description": "The ID of the Log Analytics workspace used for WVD Monitoring Insights"
-            }
-        },
-        "workspaceKey": {
-            "type": "string",
-            "metadata": {
-                "description": "The Log Analytics workspace key used to authenticate the agent"
-            }
         }
     },
     "variables": {
