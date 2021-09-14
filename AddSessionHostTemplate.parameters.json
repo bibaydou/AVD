@@ -18,29 +18,19 @@
             "value": "WVD-MS-FR"
         },
         "hostpoolToken": {
-            "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk3NkE4Q0I1MTQwNjkyM0E4MkU4QUQ3MUYzQjE4NzEyN0Y2OTRDOTkiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjkzYzliZjkzLThkMDctNGJiNC05MmMyLTE5OGYzYWVlOGI5MCIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy1ldS1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLWV1LXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiZmQ5MGNiYzktYzliNy00ZGY5LTk5OWYtOGFhOWVmZmRiOGE0IiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJFVSIsIkdsb2JhbEJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovL3JkYnJva2VyLnd2ZC5taWNyb3NvZnQuY29tLyIsIkJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovL3JkYnJva2VyLWctZXUtcjAud3ZkLm1pY3Jvc29mdC5jb20vIiwiRGlhZ25vc3RpY3NSZXNvdXJjZUlkVXJpIjoiaHR0cHM6Ly9yZGRpYWdub3N0aWNzLWctZXUtcjAud3ZkLm1pY3Jvc29mdC5jb20vIiwibmJmIjoxNjMxMTE3MTEyLCJleHAiOjE2MzIzNDgwMDAsImlzcyI6IlJESW5mcmFUb2tlbk1hbmFnZXIiLCJhdWQiOiJSRG1pIn0.KDviijoQchRr2RH8qceOmkJpFArHIL3eH7FkfGQGXyAwghk4dX7uFEovadGIfvX1iX7SoZ7VGiqrlVbmkz2Lrp-2ZQd7wKMXOHpJQju_lh0Mtz58VHkyLRu6RKZ-kEfbHdEJldHLC2bzp7YHhvPCx_Wzhq2wA5F7izmyjazpo06vGUbLzg9cL_XPsdfMUd-xFLEOZDzICLHlWigas7t27btWaz1p4L47MeUJ4hnFj8N9BCXsLbyPsf6qde90Mlla_DOqSve4hnzf_KxHHBZfuGtADgpOSkffTlj0dBBn5uq0UnZNWL6dj3LW2y37IH0c4sdJbSncw0_KFAiyDxUQjQ"
+            "value": ""
         },
         "administratorAccountUsername": {
             "value": "domain_join@baydoun.tech"
         },
         "administratorAccountPassword": {
-            "reference": {
-                "keyVault": {
-                    "id": "/subscriptions/56137b95-102c-47b5-8da0-b6cc62f1e63a/resourceGroups/RGCoreMSBaydoun/providers/Microsoft.KeyVault/vaults/msbaydounkeyvault"
-                },
-                "secretName": "DomainJoinAdmin"
-            }
+            "value": ""
         },
         "vmAdministratorAccountUsername": {
             "value": "AVDlocaladmin"
         },
         "vmAdministratorAccountPassword": {
-            "reference": {
-                "keyVault": {
-                    "id": "/subscriptions/56137b95-102c-47b5-8da0-b6cc62f1e63a/resourceGroups/RGCoreMSBaydoun/providers/Microsoft.KeyVault/vaults/msbaydounkeyvault"
-                },
-                "secretName": "AVDlocaladmin"
-            }
+            "value": ""
         },
         "vmSize": {
             "value": "Standard_B2s"
