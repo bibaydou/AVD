@@ -488,31 +488,6 @@
                 }
             }
         },
-        {
-            "type": "Microsoft.Compute/virtualMachines/extensions",
-            "name": "[concat(variables('rdshPrefix'), add(copyindex(), parameters('vmInitialNumber')),'/OMSExtension')]",
-            "apiVersion": "2015-06-15",
-            "location": "[parameters('vmLocation')]",
-            "dependsOn": [
-                "[concat('vmCreation-linkedTemplate-', parameters('deploymentId'))]"
-            ],
-            "copy": {
-                "name": "rdsh-la-loop",
-                "count": "[parameters('vmNumberOfInstances')]"
-            },
-            "properties": {
-                "publisher": "Microsoft.EnterpriseCloud.Monitoring",
-                "type": "MicrosoftMonitoringAgent",
-                "typeHandlerVersion": "1.0",
-                "autoUpgradeMinorVersion": true,
-                "settings": {
-                    "workspaceId": "[parameters('workspaceId')]"
-                },
-                "protectedSettings": {
-                    "workspaceKey": "[parameters('workspaceKey')]"
-                }
-            }
-        }
     ],
     "outputs": {
         "rdshVmNamesObject": {

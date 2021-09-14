@@ -15,74 +15,74 @@
             }
         },
         "hostpoolName": {
-            "value": "<HostPoolName>"
+            "value": "WVD-MS-FR"
         },
         "hostpoolToken": {
-            "value": "<HostPoolToken>"
+            "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk3NkE4Q0I1MTQwNjkyM0E4MkU4QUQ3MUYzQjE4NzEyN0Y2OTRDOTkiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjkzYzliZjkzLThkMDctNGJiNC05MmMyLTE5OGYzYWVlOGI5MCIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy1ldS1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLWV1LXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiZmQ5MGNiYzktYzliNy00ZGY5LTk5OWYtOGFhOWVmZmRiOGE0IiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJFVSIsIkdsb2JhbEJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovL3JkYnJva2VyLnd2ZC5taWNyb3NvZnQuY29tLyIsIkJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovL3JkYnJva2VyLWctZXUtcjAud3ZkLm1pY3Jvc29mdC5jb20vIiwiRGlhZ25vc3RpY3NSZXNvdXJjZUlkVXJpIjoiaHR0cHM6Ly9yZGRpYWdub3N0aWNzLWctZXUtcjAud3ZkLm1pY3Jvc29mdC5jb20vIiwibmJmIjoxNjMxMTE3MTEyLCJleHAiOjE2MzIzNDgwMDAsImlzcyI6IlJESW5mcmFUb2tlbk1hbmFnZXIiLCJhdWQiOiJSRG1pIn0.KDviijoQchRr2RH8qceOmkJpFArHIL3eH7FkfGQGXyAwghk4dX7uFEovadGIfvX1iX7SoZ7VGiqrlVbmkz2Lrp-2ZQd7wKMXOHpJQju_lh0Mtz58VHkyLRu6RKZ-kEfbHdEJldHLC2bzp7YHhvPCx_Wzhq2wA5F7izmyjazpo06vGUbLzg9cL_XPsdfMUd-xFLEOZDzICLHlWigas7t27btWaz1p4L47MeUJ4hnFj8N9BCXsLbyPsf6qde90Mlla_DOqSve4hnzf_KxHHBZfuGtADgpOSkffTlj0dBBn5uq0UnZNWL6dj3LW2y37IH0c4sdJbSncw0_KFAiyDxUQjQ"
         },
         "administratorAccountUsername": {
-            "value": "<DomainJoinAccount>"
+            "value": "domain_join@baydoun.tech"
         },
         "administratorAccountPassword": {
             "reference": {
                 "keyVault": {
-                  "id": "<KeyVaultURI>"
+                    "id": "/subscriptions/56137b95-102c-47b5-8da0-b6cc62f1e63a/resourceGroups/RGCoreMSBaydoun/providers/Microsoft.KeyVault/vaults/msbaydounkeyvault"
                 },
-                "secretName": "<DomainAddSecret>"
-              }
+                "secretName": "DomainJoinAdmin"
+            }
         },
         "vmAdministratorAccountUsername": {
-            "value": "<LocalAdmin>"
+            "value": "AVDlocaladmin"
         },
         "vmAdministratorAccountPassword": {
             "reference": {
                 "keyVault": {
-                  "id": "<KeyVaultURI>"
+                    "id": "/subscriptions/56137b95-102c-47b5-8da0-b6cc62f1e63a/resourceGroups/RGCoreMSBaydoun/providers/Microsoft.KeyVault/vaults/msbaydounkeyvault"
                 },
-                "secretName": "<LocalAdminSecret>"
-              }
+                "secretName": "AVDlocaladmin"
+            }
         },
         "vmSize": {
-            "value": "<VMSize>"
+            "value": "Standard_B2s"
         },
         "vmInitialNumber": {
-            "value": 1
+            "value": 2
         },
         "vmNumberOfInstances": {
-            "value": 3
+            "value": 2
         },
         "vmNamePrefix": {
-            "value": "<VMPrefix>"
+            "value": "WVD-MS"
         },
         "vmImageType": {
-            "value": "CustomImage"
+            "value": "Gallery"
         },
-        "vmCustomImageSourceId": {
-            "value": "<SIGURI>"
+        "vmGalleryImageOffer": {
+            "value": "office-365"
+        },
+        "vmGalleryImagePublisher": {
+            "value": "MicrosoftWindowsDesktop"
+        },
+        "vmGalleryImageSKU": {
+            "value": "20h2-evd-o365pp-g2"
         },
         "vmDiskType": {
-            "value": "<DiskType>"
+            "value": "Standard_LRS"
         },
         "existingVnetName": {
-            "value": "<VNetName>"
+            "value": "msbaydoun-vnet"
         },
         "existingSubnetName": {
-            "value": "<SHSubnet>"
+            "value": "Core"
         },
         "virtualNetworkResourceGroupName": {
-            "value": "<VNetRG>"
+            "value": "RGCoreMSBaydoun"
         },
         "ouPath": {
-            "value": "<OUPath>"
+            "value": "OU=WVD,DC=baydoun,DC=tech"
         },
         "domain": {
-            "value": "<DomainName>"
-        },
-        "workspaceId": {
-            "value": "<WorkspaceID>"
-        },
-        "workspaceKey": {
-            "value": "<WorkspaceKey>"
+            "value": "baydoun.tech"
         }
     }
 }
